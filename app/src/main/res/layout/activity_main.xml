@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_nama"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:id="@+id/Lbl_nama"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Txtnama"
+        android:inputType="none"
+        android:layout_below="@+id/Lbl_nama"
+        tools:ignore="LabelFor,MissingConstraints"
+        android:autofillHints="" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_tampil_nama"
+        android:id="@+id/Btn_tampil"
+        android:onClick="tampilnama"
+        tools:ignore="MissingConstraints,OnClick,UsingOnClickInXml" />
+
+    <TextView
+        tools:ignore="MissingConstraints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Label2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_below="@+id/Btn_tampil"
+    />
+</RelativeLayout>
